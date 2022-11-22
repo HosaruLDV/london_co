@@ -25,7 +25,6 @@ london_co = {
         "routing": True
     }
 }
-user_input = input("Введите имя устройства: ")
-for i in london_co.keys():
-    if i == user_input:
-        print(london_co[i])
+user_input = london_co[input("Введите имя устройства: ")]
+param = user_input[input("Введите имя параметра: ")]
+print(param)
