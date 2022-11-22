@@ -25,3 +25,7 @@ london_co = {
         "routing": True
     }
 }
+user_input = input("Введите имя устройства: ")
+for i in london_co.keys():
+    if i == user_input:
+        print(london_co[i])
