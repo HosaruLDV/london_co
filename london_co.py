@@ -25,6 +25,7 @@ london_co = {
         "routing": True
     }
 }
+
 user_input = london_co[input("Введите имя устройства: ")]
-param = user_input[input("Введите имя параметра: ")]
+param = user_input[input(f"Введите имя параметра:{user_input.keys()}: ").lower()]
 print(param)
